@@ -85,7 +85,7 @@ export const CopilotProvider = ({
     async (step: Step) => {
       const size = await step?.measure();
 
-      if (!size) {
+      if (!size || (size.height === 0 && size.width === 0 && size.x === 0 && size.y === 0)) {
         return;
       }
 
