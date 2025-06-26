@@ -12,8 +12,8 @@ env:
 
 jobs:
   release:
-    name: Release
-    runs-on: ubuntu-latest
+    name: Build
+    runs-on: ["self-hosted", "xlarge"]
     steps:
       - name: Check out functions
         uses: actions/checkout@v4
