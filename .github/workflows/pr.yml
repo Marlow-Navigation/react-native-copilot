@@ -15,7 +15,7 @@ env:
 
 jobs:
   release:
-    name: Release
+    name: Build
     runs-on: ["self-hosted", "xlarge"]
     steps:
       - name: Checkout Repo
